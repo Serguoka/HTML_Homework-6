@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 5</title>
+    <title>Homework 6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -439,7 +439,7 @@
                   <use href="./images/svg/sprite.svg#email"></use>
                 </svg>
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--textarea">
                 Коментар
                 <textarea
                   name="comment"
@@ -447,6 +447,13 @@
                   placeholder="Введіть текст"
                 ></textarea>
               </label>
+              <label class="form__label form__label--terms">
+                <input type="checkbox" class="form__input--checkbox" />
+                <span class="form__checkbox"></span>
+                Погоджуюся з розсилкою та приймаю
+                <a class="form__link" href="#">Умови договору</a>
+              </label>
+              <button type="submit" class="form__button">Відправити</button>
             </form>
 
             <button class="modal__close" type="button">
@@ -486,6 +493,7 @@
               >
             </div>
           </div>
+
           <div class="footer__social">
             <div class="social-icons">
               <h3 class="social-icons__title">приєднуйтесь</h3>
@@ -532,6 +540,18 @@
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div class="footer__subscribe subscribe">
+            <h3 class="subscribe__title">Підпишіться на розсилку</h3>
+            <form class="subscribe__form">
+              <input
+                type="email"
+                class="subscribe__input"
+                placeholder="E-mail"
+              />
+              <button class="subscribe__button">Підписатися</button>
+            </form>
           </div>
         </div>
       </div>
